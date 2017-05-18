@@ -1,0 +1,456 @@
+[
+
+
+
+
+{
+"title": "Clinical Terminologies",
+"tags": "designdevelopment",
+"keywords": "development",
+"url": "design_clinical_terminologies.html",
+"summary": "Brief guidance on how clinical terminologies are expected to be used within the Care Connect FHIR&reg; API."
+},
+
+
+
+{
+"title": "Development Roadmap",
+"tags": "engagedevelopmentfhir",
+"keywords": "development,",
+"url": "design_development_roadmap.html",
+"summary": "Care Connect API roadmap outlines the development schedule for the RESTful APIs."
+},
+
+
+
+{
+"title": "Product Versioning",
+"tags": "development",
+"keywords": "development, versioning",
+"url": "design_product_versioning.html",
+"summary": "An overview of how capability packs (and other technical assets) are versioned."
+},
+
+
+
+{
+"title": "Security Guidance",
+"tags": "development",
+"keywords": "development",
+"url": "development_api_security_guidance.html",
+"summary": "Details of the API security model and supported protocols."
+},
+
+
+
+{
+"title": "Reference Profiles",
+"tags": "development",
+"keywords": "development deliverables",
+"url": "development_deliverables.html",
+"summary": "Developer Cheat Sheet shortcuts for the <br/>technical build of Care Connect API."
+},
+
+
+
+{
+"title": "Open Source Guidance",
+"tags": "fhirdevelopment",
+"keywords": "fhir, development, open source",
+"url": "development_fhir_open_source_guidance.html",
+"summary": "Details of open source FHIR libraries."
+},
+
+
+
+{
+"title": "Server Guidance",
+"tags": "fhirdevelopment",
+"keywords": "fhir development",
+"url": "development_fhir_server_guidance.html",
+"summary": "Details of how a FHIR server should be set-up to be a fully compliant."
+},
+
+
+
+{
+"title": "Engage with Care Connect",
+"tags": "engage",
+"keywords": "engage, care connect process, process, introduction",
+"url": "engage.html",
+"summary": "Describes how to engage with Care Connect and the different mechanisms involved in this process."
+},
+
+
+
+{
+"title": "Case Studies",
+"tags": "foundationsuse_caseuser storiesepicsscenarios",
+"keywords": "case studies, usecase, user stories, epics, scenarios, business analaysis, technical architecture, context",
+"url": "engage_case_studies.html",
+"summary": "Case Studies showing the adoption process, combining the business analysis, context and technical architecture involved in delivering a project."
+},
+
+
+
+{
+"title": "Proof of Concept",
+"tags": "foundationsuse_caseuser storiesepicsscenarios",
+"keywords": "proof of concept, PoC, nhsnumber, usecase, user stories, epics, scenarios",
+"url": "engage_proof_of_concept.html",
+"summary": "Proof of Concept write ups and explanation of the process undertaken to adopt Care Connect profiles"
+},
+
+
+
+{
+"title": "User Stories | Care Connect API | FHIR&amp;reg;",
+"tags": "foundationsuse_caseuser storiesepicsscenarios",
+"keywords": "usecase,use case, user stories, epics, scenarios, nhsnumber",
+"url": "engage_user_stories.html",
+"summary": "User stories to search for a Care Connect FHIR&reg; Profile."
+},
+
+
+
+{
+"title": "Using Care Connect Profiles",
+"tags": "foundationsuse_caseuser storiesepicsscenarios",
+"keywords": "proof of concept, PoC, nhsnumber, usecase, user stories, epics, scenarios",
+"url": "engage_using_profiles.html",
+"summary": "A process to help get you started using Care Connect Profiles in your environment"
+},
+
+
+
+{
+"title": "Explore  Care Connect",
+"tags": "explore",
+"keywords": "explore, care connect process, process, introduction",
+"url": "explore.html",
+"summary": "Call to action for support building the implementation guide"
+},
+
+
+
+
+
+{
+"title": "Foundations",
+"tags": "fhir",
+"keywords": "foundations",
+"url": "foundations.html",
+"summary": "All about the common foundation capabilities."
+},
+
+
+
+{
+"title": "Proof of Concept",
+"tags": "foundationsuse_caseuser storiesepicsscenarios",
+"keywords": "proof of concept, PoC, nhsnumber, usecase, user stories, epics, scenarios",
+"url": "foundations_proof_of_concept.html",
+"summary": "Proof of Concept write ups and explanation of the process undertaken to adopt Care Connect profiles"
+},
+
+
+
+{
+"title": "Care Connect API Use Cases | FHIR&amp;reg;",
+"tags": "foundationsuse_caseuser storiesepicsscenarios",
+"keywords": "nhsnumber, usecase, user stories, epics, scenarios",
+"url": "foundations_use_case_api.html",
+"summary": "Use case to search for a Care Connect FHIR&reg; Profile."
+},
+
+
+
+{
+"title": "Get the FHIR Conformance Profile",
+"tags": "foundationsuse_casefhir",
+"keywords": "foundations, fhir",
+"url": "foundations_use_case_get_the_fhir_conformance_profile.html",
+"summary": "Use case for getting the FHIR server's conformance profile."
+},
+
+
+
+{
+"title": "Using Care Connect Profiles",
+"tags": "foundationsuse_caseuser storiesepicsscenarios",
+"keywords": "proof of concept, PoC, nhsnumber, usecase, user stories, epics, scenarios",
+"url": "foundations_using_profiles.html",
+"summary": "A process to help get you started using Care Connect Profiles in your environment"
+},
+
+
+
+{
+"title": "Introduction to Care Connect API",
+"tags": "overview",
+"keywords": "homepage",
+"url": "index.html",
+"summary": "A brief introduction to getting started with the Care Connect FHIR&reg; APIs."
+},
+
+
+
+{
+"title": "Glossary",
+"tags": "overview",
+"keywords": "abbreviations, definitions, glossaries, terms",
+"url": "overview_glossary.html",
+"summary": "Glossary of terms used by Care Connect"
+},
+
+
+
+{
+"title": "Overview | Profiles",
+"tags": "structuredgetcarerecord",
+"keywords": "getcarerecord, structured, rest, resource",
+"url": "restfulapis.html",
+"summary": "Overview"
+},
+
+
+
+{
+"title": "Clinical Overview",
+"tags": "restful_apiuse_case",
+"keywords": "usecase, encounter",
+"url": "restfulapis_clinical.html",
+"summary": "Clinical Overview"
+},
+
+
+
+{
+"title": "Clinical | Allergy Intolerance",
+"tags": "structuredgetcarerecord",
+"keywords": "getcarerecord, structured, rest, allergy, intolerance",
+"url": "restfulapis_clinical_allergyintolerance.html",
+"summary": "Clinical Allergy Intolerance"
+},
+
+
+
+{
+"title": "Clinical | Condition",
+"tags": "structuredgetcarerecord",
+"keywords": "getcarerecord, structured, rest, condition",
+"url": "restfulapis_clinical_condition.html",
+"summary": "Clinical Condition"
+},
+
+
+
+{
+"title": "Clinical | Family Member History",
+"tags": "restful_apiuse_case",
+"keywords": "usecase, familymemberhistory",
+"url": "restfulapis_clinical_familymemberhistory.html",
+"summary": "Clinical Family Member History"
+},
+
+
+
+{
+"title": "Clinical | Immunization",
+"tags": "structuredgetcarerecord",
+"keywords": "getcarerecord, structured, rest, immunization",
+"url": "restfulapis_clinical_immunization.html",
+"summary": "Clinical Immunization"
+},
+
+
+
+{
+"title": "Clinical | Medication",
+"tags": "restful_apiclinicalprofile",
+"keywords": "usecase, medication",
+"url": "restfulapis_clinical_medication.html",
+"summary": "Clinical Medication"
+},
+
+
+
+{
+"title": "Clinical | Medication Flag",
+"tags": "restful_apiclinicalprofile",
+"keywords": "usecase, medication, flag",
+"url": "restfulapis_clinical_medicationflag.html",
+"summary": "Workflow Medication Flag"
+},
+
+
+
+{
+"title": "Clinical | Medication Order",
+"tags": "restful_apiclinicalprofile",
+"keywords": "usecase, medication, order",
+"url": "restfulapis_clinical_medicationorder.html",
+"summary": "Clinical Observation"
+},
+
+
+
+{
+"title": "Clinical | Medication Statement",
+"tags": "restful_apiclinicalprofile",
+"keywords": "usecase, clinical",
+"url": "restfulapis_clinical_medicationstatement.html",
+"summary": "Clinical Medication Statement"
+},
+
+
+
+{
+"title": "Clinical | Observation",
+"tags": "restful_apiclinicalprofile",
+"keywords": "usecase, observation",
+"url": "restfulapis_clinical_observation.html",
+"summary": "Clinical Observation"
+},
+
+
+
+{
+"title": "Clinical | Procedure",
+"tags": "restful_apiuse_case",
+"keywords": "usecase, procedure",
+"url": "restfulapis_clinical_procedure.html",
+"summary": "Clinical Procedure"
+},
+
+
+
+{
+"title": "Identification",
+"tags": "structuredgetcarerecord",
+"keywords": "getcarerecord, structured, rest, allergy, intolerance",
+"url": "restfulapis_identification.html",
+"summary": "restfulapis_identification"
+},
+
+
+
+{
+"title": "Identification | Location",
+"tags": "structuredpatient",
+"keywords": "usecase, location, order",
+"url": "restfulapis_identification_location.html",
+"summary": "Clinical Location"
+},
+
+
+
+{
+"title": "Identification | Organisation",
+"tags": "structuredpatient",
+"keywords": "usecase, Organization",
+"url": "restfulapis_identification_organisation.html",
+"summary": "Identification Organization"
+},
+
+
+
+{
+"title": "Identification | Patient",
+"tags": "structuredpatient",
+"keywords": "getcarerecord, structured, rest, patient",
+"url": "restfulapis_identification_patient.html",
+"summary": "Patient"
+},
+
+
+
+{
+"title": "Identification | Practitioner",
+"tags": "structuredpatient",
+"keywords": "usecase, Practitioner",
+"url": "restfulapis_identification_practitoner.html",
+"summary": "Practitioner"
+},
+
+
+
+{
+"title": "Workflow Overview",
+"tags": "structuredgetcarerecord",
+"keywords": "getcarerecord, structured, rest, allergy, intolerance",
+"url": "restfulapis_workflow.html",
+"summary": "Workflow Overview"
+},
+
+
+
+{
+"title": "Workflow | Encounter",
+"tags": "restful_apiuse_case",
+"keywords": "usecase, encounter",
+"url": "restfulapis_workflow_encounter.html",
+"summary": "restfulapis_workflow_encounter"
+},
+
+
+
+{
+"title": "Workflow | Flag",
+"tags": "restful_apiclinicalprofile",
+"keywords": "usecase, flag",
+"url": "restfulapis_workflow_flag.html",
+"summary": "Workflow Flag"
+},
+
+
+
+
+
+{
+"title": "Coming soon",
+"tags": "support",
+"keywords": "support, communications, community",
+"url": "support_coming_soon.html",
+"summary": "Call to action for support building the implementation guide"
+},
+
+
+
+{
+"title": "Communication Channels",
+"tags": "support",
+"keywords": "support, communications, community",
+"url": "support_communications.html",
+"summary": "Communication channels used for the Care Connect FHIR&reg; API."
+},
+
+
+
+{
+"title": "Frequently Asked Questions (FAQ)",
+"tags": "support",
+"keywords": "support, faq, questions",
+"url": "support_faq.html",
+"summary": "Frequently Asked Questions (FAQ)."
+},
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+]

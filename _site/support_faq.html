@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Begin Jekyll SEO tag v2.0.0 -->
+<title>Frequently Asked Questions (FAQ)</title>
+<meta property="og:title" content="Frequently Asked Questions (FAQ)">
+<meta name="description" content="The Care Connect RESTful APIs support the delivery of care by opening information and data held across different clinical care settings through the use of nationally defined INTEROPen FHIR® resources.">
+<meta property="og:description" content="The Care Connect RESTful APIs support the delivery of care by opening information and data held across different clinical care settings through the use of nationally defined INTEROPen FHIR® resources.">
+<link rel="canonical" href="https://nhsconnect.github.io/CareConnectAPI/support_faq.html">
+<meta property="og:url" content="https://nhsconnect.github.io/CareConnectAPI/support_faq.html">
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "WebPage",
+    "headline": "Frequently Asked Questions (FAQ)",
+    "description": "The Care Connect RESTful APIs support the delivery of care by opening information and data held across different clinical care settings through the use of nationally defined INTEROPen FHIR® resources.",
+    "url": "https://nhsconnect.github.io/CareConnectAPI/support_faq.html"
+  }
+</script>
+<!-- End Jekyll SEO tag -->
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Frequently Asked Questions (FAQ).">
+<meta name="keywords" content="support,  support, faq, questions">
+<title>Frequently Asked Questions (FAQ) | Care Connect</title>
+<link rel="stylesheet" href="css/syntax.css">
+
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="css/modern-business.css">
+<link rel="stylesheet" href="css/lavish-bootstrap.css">
+<link rel="stylesheet" href="css/customstyles.css">
+<link rel="stylesheet" href="css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="js/jquery.navgoco.min.js"></script>
+<script src="js/image-map.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/2.0.0/anchor.min.js"></script>
+<script src="js/toc.js"></script>
+<script src="js/customscripts.js"></script>
+
+<link rel="icon" type="image/png" href="images/favicon.png">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<link rel="alternate" type="application/rss+xml" title="" href="https://nhsconnect.github.io/CareConnectAPIfeed.xml">
+
+
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="index.html"> <span class="projectTitle"> Care Connect API | FHIR®</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- entries without drop-downs appear here -->
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: 'search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Frequently Asked Questions (FAQ)">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+            <a href="https://github.com/nhsconnect/CareConnectAPI" target="_blank" class="fa fa-github fa-lg navbar-brand no_icon pull-right" aria-hidden="true"> </a>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+
+<!-- Page Content -->
+<div class="container">
+    <div class="col-lg-12"> </div>
+    <!-- Content Row -->
+    <div class="row">
+        <!-- Sidebar Column -->
+        <div class="col-md-3">
+
+          
+
+
+
+
+
+
+
+
+<ul id="mysidebar" class="nav">
+	
+    <p style="font-size:2em;">
+        <img src="images/interopen.png" height="48px" alt="INTEROpen Logo">
+    INTEROPen</p>
+    <p style="font-size:16px;">Supported by
+    <img src="images/logo.png" height="36px" alt="NHS Digital Logo">
+    </p>
+    
+
+    <li class="sidebarTitle">Care Connect alpha.0.0.1</li>
+    
+    
+    
+    <li>
+        <a href="#">Overview</a>
+        <ul>
+            
+            
+            
+            <li><a href="index.html">Introduction</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="design_development_roadmap.html">Development Roadmap</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="design_product_versioning.html">Care Connect Versioning</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="overview_glossary.html">Glossary</a></li>
+            
+            
+            
+            
+        </ul>
+        
+        
+    
+    </li>
+<li>
+        <a href="#">Engage</a>
+        <ul>
+            
+            
+            
+            <li><a href="engage.html">Overview</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="engage_user_stories.html">User Stories | FHIR®</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="engage_using_profiles.html">Using Profiles</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="engage_proof_of_concept.html">Proof of Concepts</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="engage_case_studies.html">Case Studies</a></li>
+            
+            
+            
+            
+        </ul>
+        
+        
+    
+    </li>
+<li>
+        <a href="#">Design &amp; Build</a>
+        <ul>
+            
+            
+            
+            <li><a href="restfulapis.html">Overview | Profiles</a></li>
+            
+            
+            
+            <li class="subfolders">
+                <a href="#">Clinical</a>
+                <ul>
+                    
+                    
+                    
+                    <li><a href="restfulapis_clinical_allergyintolerance.html">Allergy Intolerance</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="restfulapis_clinical_condition.html">Condition</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="restfulapis_clinical_familymemberhistory.html">Family Member History</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="restfulapis_clinical_immunization.html">Immunization</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="restfulapis_clinical_medication.html">Medication</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="restfulapis_clinical_medicationflag.html">Medication Flag</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="restfulapis_clinical_medicationorder.html">Medication Order</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="restfulapis_clinical_medicationstatement.html">Medication Statement</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="restfulapis_clinical_observation.html">Observation</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="restfulapis_clinical_procedure.html">Procedure</a></li>
+                    
+                    
+                    
+                </ul>
+            </li>
+            
+            
+            
+            <li class="subfolders">
+                <a href="#">Identification</a>
+                <ul>
+                    
+                    
+                    
+                    <li><a href="restfulapis_identification_location.html">Location</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="restfulapis_identification_organisation.html">Organisation</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="restfulapis_identification_patient.html">Patient</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="restfulapis_identification_practitoner.html">Practitoner</a></li>
+                    
+                    
+                    
+                </ul>
+            </li>
+            
+            
+            
+            <li class="subfolders">
+                <a href="#">Workflow</a>
+                <ul>
+                    
+                    
+                    
+                    <li><a href="restfulapis_workflow_encounter.html">Encounter</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="restfulapis_workflow_flag.html">Flag</a></li>
+                    
+                    
+                    
+                </ul>
+            </li>
+            
+            
+            
+            
+            
+            
+            <li><a href="foundations.html">API Foundations</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="development_deliverables.html">Reference</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="foundations_use_case_get_the_fhir_conformance_profile.html">Conformance Profile | FHIR®</a></li>
+            
+            
+            
+            <li class="subfolders">
+                <a href="#">API Guidance | FHIR®</a>
+                <ul>
+                    
+                    
+                    
+                    <li><a href="development_fhir_open_source_guidance.html">Open Source</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="development_api_security_guidance.html">Security Guidance</a></li>
+                    
+                    
+                    
+                </ul>
+            </li>
+            
+            
+            
+            
+        </ul>
+        
+        
+    
+    </li>
+<li>
+        <a href="#">Explore</a>
+        <ul>
+            
+            
+            
+            <li><a href="support_coming_soon.html">Overview | Coming soon</a></li>
+            
+            
+            
+            
+        </ul>
+        
+        
+    
+    </li>
+<li>
+        <a href="#">Test</a>
+        <ul>
+            
+            
+            
+            <li><a href="support_coming_soon.html">Overview | Coming soon</a></li>
+            
+            
+            
+            
+        </ul>
+        
+        
+    
+    </li>
+<li>
+        <a href="#">Accredit</a>
+        <ul>
+            
+            
+            
+            <li><a href="support_coming_soon.html">Overview | Coming soon</a></li>
+            
+            
+            
+            
+        </ul>
+        
+        
+    
+    </li>
+<li>
+        <a href="#">Deploy</a>
+        <ul>
+            
+            
+            
+            <li><a href="support_coming_soon.html">Overview | Coming soon</a></li>
+            
+            
+            
+            
+        </ul>
+        
+        
+    
+    </li>
+<li>
+        <a href="#">Help &amp; Support</a>
+        <ul>
+            
+            
+            
+            <li class="active"><a href="support_faq.html">Frequently Asked Questions (FAQ)</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="support_communications.html">Communication Channels</a></li>
+            
+            
+            
+            
+        </ul>
+        
+        
+    
+    </li>
+<li>
+        <a href="#">Tags</a>
+        <ul>
+            
+            
+            
+            <li><a href="tag_overview.html">Introduction</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="tag_fhir.html">FHIR®</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="tag_use_case.html">Use Case</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="tag_design.html">Design</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="tag_development.html">Development</a></li>
+            
+            
+            
+            
+        </ul>
+        
+        
+        
+        <!-- if you aren't using the accordion, uncomment this block:
+           <p class="external">
+               <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+           </p>
+           -->
+    </li>
+</ul>
+</div>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+
+    <!-- Content Column -->
+    <div class="col-md-9">
+         
+
+<div class="post-header">
+   <h1 class="post-title-main">Frequently Asked Questions (FAQ)</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+    <div class="summary">Frequently Asked Questions (FAQ).</div>
+   
+
+   
+
+    
+
+  <h4 id="why-are-you-not-using-the-latest-version-of-fhir-dstu3">Why are you not using the latest version of FHIR (DSTU3)?</h4>
+
+<p>As DSTU3 hasn’t yet been balloted the current version of FHIR is still DSTU2 and will be until later this year. Grahame Grieve has recently posted an update on his <a href="https://onfhir.hl7.org">OnFHIR blog</a> around the next version of FHIR being a STU3 release with a tentative target release date of March 31st 2017.</p>
+
+<p>As outlined in the <a href="development_fhir_api_guidance.html#fhir-timelineshttphl7orgfhirtimelineshtml">FHIR Timelines</a> section uplifting to newer versions of the FHIR standard is expected (in the sense that in principle it shouldn’t come as a surprise to anyone, as we’re utilising what is currently still a draft standard after all). The mechanism and timing of uplifts will be agreed by the INTEROPen® Community.</p>
+
+<h4 id="why-are-you-mandating-support-for-both-xml-and-json-formats">Why are you mandating support for both XML and JSON formats?</h4>
+
+<p>Both JSON and XML serialisation formats are in scope for a number of reasons. After surveying the existing major FHIR implementations they almost all support both JSON and XML. As a FHIR back-end service it is important to enable ‘low impedance’ integration with both traditional server/desktop applications (which often use XML) and mobile/web applications (which are largely JSON). Obviously, when establishing a new open API ecosystem we want to be as open and inclusive as possible and hence feel that excluding either format would be a divisive move. 
+Several existing open source FHIR libraries exist which already supports both serialization formats (such as Java HAPI or Furore FHIR .NET) which should minimise development overhead for implementers.</p>
+
+<p>To ensure maximum accessibility, the Care Connect FHIR® APIs will expect clients to support both formats. However since XML is on average 30% larger on the wire there is a preference towards use of JSON.</p>
+
+<h4 id="why-is-resource-versioning-included-as-a-mandatory-requirement">Why is resource versioning included as a mandatory requirement?</h4>
+
+<p>It is a key principle of the FHIR RESTful APIs that all resources are versioned; without this support no updates to data can ever be safely performed. This is explained in the “Lost Updates” section and “Transactional Integrity” sections of the FHIR standard. Whilst we recognise that it is not necessary to persist versioned access to historical records, it is important that the latest record version can be ascertained. David Hay (Product Strategist at Orion Health) has a blog post on how systems that don’t fully support versions can handle this requirement in a simple and straight forward way.</p>
+
+<p><a href="https://fhirblog.com/2013/11/21/fhir-versioning-with-a-non-version-capable-back-end/">https://fhirblog.com/2013/11/21/fhir-versioning-with-a-non-version-capable-back-end/</a></p>
+
+<h4 id="will-it-be-necessary-in-all-cases-to-use-an-nhs-service-to-look-up-stafforganisationlocation-information-when-a-supplier-may-have-their-own-index-of-this-information">Will it be necessary in all cases to use an NHS service to look up staff/organisation/location information when a supplier may have their own index of this information?</h4>
+
+<p>You are welcome to use your own ODS index (i.e. to find an organisation by name/address etc.). However, you will need to perform an SDS lookup using the ODS code to resolve the FHIR endpoint that represents that ODS code for the purpose of using the Care Connect APIs.</p>
+
+<h4 id="why-is-oauth2-not-used">Why is oAuth2 not used?</h4>
+
+<p>Authentication will be via mutual TLS/SSL authentication. The JWT web token has been proposed to allow the easy bundling of related authentication details and to eliminate the need for many separate customer headers, or a bespoke bundling formats to be defined, implemented and maintained.</p>
+
+<h4 id="why-are-json-web-tokens-jwt-required">Why are JSON Web Tokens (JWT) required?</h4>
+
+<p>Extra HTTP headers are needed for sending provenance/audit details. Sending this data in a JWT Bearer token (which is simply a fragment of JSON) is an easy way of achieving the communication of this data and various libraries exist to make authoring this content trivial.</p>
+
+<h4 id="why-is-there-to-be-a-centrally-held-list-of-error-codes-in-addition-to-the-standard-http-response-codes">Why is there to be a centrally-held list of error codes in addition to the standard HTTP response codes?</h4>
+
+<p>The list of error codes is really intended to allow consumer applications to make sense of errors that the human operator could potentially do something about. We recognise there is a cost-benefit trade-off in this space and will look to only introduce error codes (above that of the base FHIR specification) when they add sufficient value. For example a 400 - Bad Request error code in isolation doesn’t help you determine which input parameter(s) are malformed and similarly a 422 -  Unprocessable Entity doesn’t in isolation help you determine which business rule (or integrity constraint) has caused an operation to fail.</p>
+
+<p>Defining a small number of supplementary error codes to be included in the Operation Outcome entity allows sense to be made of these failing interactions.</p>
+
+
+    <div class="tags">
+        
+        <b>Tags: </b>
+        
+        
+        
+        
+        
+    </div>
+
+    
+
+</div>
+
+<hr class="shaded">
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+                    <img class="pull-left" src="images/explanatoryline.png" alt="NHS Digital Explanatory Line">
+                    <br>
+                    ©2017 INTEROpen and NHS Digital<br>
+                     Site last generated: May 18, 2017 <br>
+                    a75022b278eb7154898bf9b31ae39c88c3f6e964<br>
+                    <br>
+                    <!-- OGL Licence -->
+                    <div class="open-government-licence">
+                        <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" rel="license" class="no_icon"><img src="images/licence/ogl-symbol-41px-retina-black.png"></a>
+                        <p>All content is available under the <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" rel="license" class="no_icon">Open Government Licence v3.0</a>, except where otherwise stated</p>
+                    </div>
+                </div>
+            </div>
+</footer>
+
+
+    </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+    </div>
+
+</body>
+
+</html>

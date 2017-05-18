@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Begin Jekyll SEO tag v2.0.0 -->
+<title>Clinical | Medication Order</title>
+<meta property="og:title" content="Clinical | Medication Order">
+<meta name="description" content="The Care Connect RESTful APIs support the delivery of care by opening information and data held across different clinical care settings through the use of nationally defined INTEROPen FHIR® resources.">
+<meta property="og:description" content="The Care Connect RESTful APIs support the delivery of care by opening information and data held across different clinical care settings through the use of nationally defined INTEROPen FHIR® resources.">
+<link rel="canonical" href="https://nhsconnect.github.io/CareConnectAPI/restfulapis_clinical_medicationorder.html">
+<meta property="og:url" content="https://nhsconnect.github.io/CareConnectAPI/restfulapis_clinical_medicationorder.html">
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "WebPage",
+    "headline": "Clinical | Medication Order",
+    "description": "The Care Connect RESTful APIs support the delivery of care by opening information and data held across different clinical care settings through the use of nationally defined INTEROPen FHIR® resources.",
+    "url": "https://nhsconnect.github.io/CareConnectAPI/restfulapis_clinical_medicationorder.html"
+  }
+</script>
+<!-- End Jekyll SEO tag -->
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Clinical Observation">
+<meta name="keywords" content="restful_apiclinicalprofile,  usecase, medication, order">
+<title>Clinical | Medication Order | Care Connect</title>
+<link rel="stylesheet" href="css/syntax.css">
+
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="css/modern-business.css">
+<link rel="stylesheet" href="css/lavish-bootstrap.css">
+<link rel="stylesheet" href="css/customstyles.css">
+<link rel="stylesheet" href="css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="js/jquery.navgoco.min.js"></script>
+<script src="js/image-map.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/2.0.0/anchor.min.js"></script>
+<script src="js/toc.js"></script>
+<script src="js/customscripts.js"></script>
+
+<link rel="icon" type="image/png" href="images/favicon.png">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<link rel="alternate" type="application/rss+xml" title="" href="https://nhsconnect.github.io/CareConnectAPIfeed.xml">
+
+
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="index.html"> <span class="projectTitle"> Care Connect API | FHIR®</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- entries without drop-downs appear here -->
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: 'search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Clinical | Medication Order">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+            <a href="https://github.com/nhsconnect/CareConnectAPI" target="_blank" class="fa fa-github fa-lg navbar-brand no_icon pull-right" aria-hidden="true"> </a>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+
+<!-- Page Content -->
+<div class="container">
+    <div class="col-lg-12"> </div>
+    <!-- Content Row -->
+    <div class="row">
+        <!-- Sidebar Column -->
+        <div class="col-md-3">
+
+          
+
+
+
+
+
+
+
+
+<ul id="mysidebar" class="nav">
+	
+    <p style="font-size:2em;">
+        <img src="images/interopen.png" height="48px" alt="INTEROpen Logo">
+    INTEROPen</p>
+    <p style="font-size:16px;">Supported by
+    <img src="images/logo.png" height="36px" alt="NHS Digital Logo">
+    </p>
+    
+
+    <li class="sidebarTitle">Care Connect alpha.0.0.1</li>
+    
+    
+    
+    <li>
+        <a href="#">Overview</a>
+        <ul>
+            
+            
+            
+            <li><a href="index.html">Introduction</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="design_development_roadmap.html">Development Roadmap</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="design_product_versioning.html">Care Connect Versioning</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="overview_glossary.html">Glossary</a></li>
+            
+            
+            
+            
+        </ul>
+        
+        
+    
+    </li>
+<li>
+        <a href="#">Engage</a>
+        <ul>
+            
+            
+            
+            <li><a href="engage.html">Overview</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="engage_user_stories.html">User Stories | FHIR®</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="engage_using_profiles.html">Using Profiles</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="engage_proof_of_concept.html">Proof of Concepts</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="engage_case_studies.html">Case Studies</a></li>
+            
+            
+            
+            
+        </ul>
+        
+        
+    
+    </li>
+<li>
+        <a href="#">Design &amp; Build</a>
+        <ul>
+            
+            
+            
+            <li><a href="restfulapis.html">Overview | Profiles</a></li>
+            
+            
+            
+            <li class="subfolders">
+                <a href="#">Clinical</a>
+                <ul>
+                    
+                    
+                    
+                    <li><a href="restfulapis_clinical_allergyintolerance.html">Allergy Intolerance</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="restfulapis_clinical_condition.html">Condition</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="restfulapis_clinical_familymemberhistory.html">Family Member History</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="restfulapis_clinical_immunization.html">Immunization</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="restfulapis_clinical_medication.html">Medication</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="restfulapis_clinical_medicationflag.html">Medication Flag</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li class="active"><a href="restfulapis_clinical_medicationorder.html">Medication Order</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="restfulapis_clinical_medicationstatement.html">Medication Statement</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="restfulapis_clinical_observation.html">Observation</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="restfulapis_clinical_procedure.html">Procedure</a></li>
+                    
+                    
+                    
+                </ul>
+            </li>
+            
+            
+            
+            <li class="subfolders">
+                <a href="#">Identification</a>
+                <ul>
+                    
+                    
+                    
+                    <li><a href="restfulapis_identification_location.html">Location</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="restfulapis_identification_organisation.html">Organisation</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="restfulapis_identification_patient.html">Patient</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="restfulapis_identification_practitoner.html">Practitoner</a></li>
+                    
+                    
+                    
+                </ul>
+            </li>
+            
+            
+            
+            <li class="subfolders">
+                <a href="#">Workflow</a>
+                <ul>
+                    
+                    
+                    
+                    <li><a href="restfulapis_workflow_encounter.html">Encounter</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="restfulapis_workflow_flag.html">Flag</a></li>
+                    
+                    
+                    
+                </ul>
+            </li>
+            
+            
+            
+            
+            
+            
+            <li><a href="foundations.html">API Foundations</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="development_deliverables.html">Reference</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="foundations_use_case_get_the_fhir_conformance_profile.html">Conformance Profile | FHIR®</a></li>
+            
+            
+            
+            <li class="subfolders">
+                <a href="#">API Guidance | FHIR®</a>
+                <ul>
+                    
+                    
+                    
+                    <li><a href="development_fhir_open_source_guidance.html">Open Source</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="development_api_security_guidance.html">Security Guidance</a></li>
+                    
+                    
+                    
+                </ul>
+            </li>
+            
+            
+            
+            
+        </ul>
+        
+        
+    
+    </li>
+<li>
+        <a href="#">Explore</a>
+        <ul>
+            
+            
+            
+            <li><a href="support_coming_soon.html">Overview | Coming soon</a></li>
+            
+            
+            
+            
+        </ul>
+        
+        
+    
+    </li>
+<li>
+        <a href="#">Test</a>
+        <ul>
+            
+            
+            
+            <li><a href="support_coming_soon.html">Overview | Coming soon</a></li>
+            
+            
+            
+            
+        </ul>
+        
+        
+    
+    </li>
+<li>
+        <a href="#">Accredit</a>
+        <ul>
+            
+            
+            
+            <li><a href="support_coming_soon.html">Overview | Coming soon</a></li>
+            
+            
+            
+            
+        </ul>
+        
+        
+    
+    </li>
+<li>
+        <a href="#">Deploy</a>
+        <ul>
+            
+            
+            
+            <li><a href="support_coming_soon.html">Overview | Coming soon</a></li>
+            
+            
+            
+            
+        </ul>
+        
+        
+    
+    </li>
+<li>
+        <a href="#">Help &amp; Support</a>
+        <ul>
+            
+            
+            
+            <li><a href="support_faq.html">Frequently Asked Questions (FAQ)</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="support_communications.html">Communication Channels</a></li>
+            
+            
+            
+            
+        </ul>
+        
+        
+    
+    </li>
+<li>
+        <a href="#">Tags</a>
+        <ul>
+            
+            
+            
+            <li><a href="tag_overview.html">Introduction</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="tag_fhir.html">FHIR®</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="tag_use_case.html">Use Case</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="tag_design.html">Design</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="tag_development.html">Development</a></li>
+            
+            
+            
+            
+        </ul>
+        
+        
+        
+        <!-- if you aren't using the accordion, uncomment this block:
+           <p class="external">
+               <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+           </p>
+           -->
+    </li>
+</ul>
+</div>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+
+    <!-- Content Column -->
+    <div class="col-md-9">
+         
+
+<div class="post-header">
+   <h1 class="post-title-main">Clinical | Medication Order</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+    <div class="summary">Clinical Observation</div>
+   
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+  
+});
+</script>
+
+<div id="toc"></div>
+
+    
+
+  <h2 id="medication-order">Medication Order</h2>
+
+<div class="alert alert-success" role="alert">
+<i class="fa fa-check-square-o"></i> <b>Tip:</b>  <a href="https://fhir-test.nhs.uk/StructureDefinition/careconnect-gpc-medicationorder-1">Care Connect Medication Order</a> Resource.</div>
+
+<h2 id="read-operation">Read Operation</h2>
+
+<p>Return a single <code class="highlighter-rouge">MedicationOrder</code> for the specified id</p>
+
+<div class="language-http highlighter-rouge">
+<pre class="highlight"><code><span class="err">GET /MedicationOrder/:id
+</span></code></pre>
+</div>
+
+<div class="language-http highlighter-rouge">
+<pre class="highlight"><code><span class="err">GET /MedicationOrder?_id=:id
+</span></code></pre>
+</div>
+
+<h2 id="search-parameters">Search Parameters</h2>
+
+<p>Medication order resource contains prescription information for a patient. Fetches a bundle of all <code class="highlighter-rouge">MedicationOrder</code> resources for the specified patient.</p>
+
+<div class="language-http highlighter-rouge">
+<pre class="highlight"><code><span class="err">GET /MedicationOrder?:searchParameters
+</span></code></pre>
+</div>
+
+<div class="alert alert-info" role="alert">
+<i class="fa fa-info-circle"></i> <b>Optional Search Parameters:</b> FHIR Dstu2 <a href="https://www.hl7.org/fhir/DSTU2/medicationorder.html#search">MedicationOrder</a>
+</div>
+
+<p>Provider systems SHOULD implement the following search parameters:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Description</th>
+      <th>Recommended</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="highlighter-rouge">datewritten</code></td>
+      <td><code class="highlighter-rouge">date</code></td>
+      <td>Return prescriptions written on this date</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">period.[start|end]</code></td>
+      <td><code class="highlighter-rouge">date</code></td>
+      <td>Return prescriptions issued in this date range</td>
+      <td>Y</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">status</code></td>
+      <td><code class="highlighter-rouge">token</code></td>
+      <td>Status of the prescription</td>
+      <td>Y</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">identifier</code></td>
+      <td><code class="highlighter-rouge">token</code></td>
+      <td>The source system of the prescriptions for</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">patient</code></td>
+      <td><code class="highlighter-rouge">reference</code></td>
+      <td>The identity of a patient to list orders for</td>
+      <td>Y</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">_revinclude</code></td>
+      <td><code class="highlighter-rouge">string</code></td>
+      <td>Include referenced resources.</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">_list</code></td>
+      <td><code class="highlighter-rouge">string</code></td>
+      <td>Return prescriptions in the list</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">_count</code></td>
+      <td><code class="highlighter-rouge">number</code></td>
+      <td>The maximum number of results per page.</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>In order to manage the number of search results returned, the server may choose to return the results in a series of pages. The search result set contains the URLs that the client uses to request additional pages from the search set. For a simple RESTful search, the page links are contained in the returned bundle as links. Please refer to <a href="https://www.hl7.org/fhir/DSTU2/search.html#count" target="_blank">Paged Search</a> for further details.</p>
+
+<p>Provider systems SHALL return an error for any unknown or unsupported parameter inline with the <code class="highlighter-rouge">Prefer: handling=strict</code> search behavior.</p>
+
+<div class="alert alert-info" role="alert">
+<i class="fa fa-info-circle"></i> <b>Note:</b> Provider systems SHALL NOT represent the medication with an external reference to a ‘Medication’ resource but SHALL reference the ‘Medication’ within the Bundle search results.</div>
+
+<h3 id="patient">patient</h3>
+
+<p>The recommended search parameters would include:</p>
+
+<ul>
+  <li>Patient.identifier on NHSNumber, HIE or Hospital Number.</li>
+  <li>a filter to limit the search results either using status = current, $current_medication list, period (issue date) or dateWritten</li>
+  <li>_revinclude=* to return all referenced resources.</li>
+</ul>
+
+<div class="language-http highlighter-rouge">
+<pre class="highlight"><code><span class="err">GET /MedicationOrder?patient.identifier=http://fhir.nhs.net/Id/nhs-number|[NHSNumber]
+</span></code></pre>
+</div>
+
+<h3 id="status">status</h3>
+
+<p>To filter on current prescriptions, change the Relative Request to</p>
+
+<div class="language-http highlighter-rouge">
+<pre class="highlight"><code><span class="err">GET /MedicationOrder?patient.identifier=http://fhir.nhs.net/Id/nhs-number|9876543210&amp;status=active
+</span></code></pre>
+</div>
+
+<h3 id="identifier">identifier</h3>
+
+<p>To filter to this list to a specific supplier, we can search for their system identifiers only.</p>
+
+<div class="language-http highlighter-rouge">
+<pre class="highlight"><code><span class="err">GET /MedicationOrder?patient.identifier=http://fhir.nhs.net/Id/nhs-number|9876543210&amp;identifier=https://theccg.systemsupplier.co.uk/MedicationOrder|
+</span></code></pre>
+</div>
+
+<h3 id="datewritten">datewritten</h3>
+
+<p>If wish to filter the results on the data of prescription. The example below returns all prescriptions for Patient with NHS Number of 9876543210 written after 14/Mar/2017 (gt = greater than)</p>
+
+<div class="language-http highlighter-rouge">
+<pre class="highlight"><code><span class="err">GET /MedicationOrder?patient.identifier=http://fhir.nhs.net/Id/nhs-number|9876543210&amp;datewritten=gt2017-03-14
+</span></code></pre>
+</div>
+
+<h3 id="list">__list</h3>
+
+<p>Provider systems SHOULD implement <a href="https://www.hl7.org/fhir/DSTU2/search.html#list">_list</a> search mechanism.</p>
+
+<p>Provider systems SHALL implement the standard <a href="https://www.hl7.org/fhir/lifecycle.html#current">current resource list</a> for the <code class="highlighter-rouge">MedicationOrder</code> resource:</p>
+
+<ul>
+  <li>
+<code class="highlighter-rouge">$current-medications</code> A list of all medications that the patient is taking.</li>
+</ul>
+
+<p>On the RESTful API, this is done using the <a href="https://www.hl7.org/fhir/DSTU2/search.html#list">list search mechanism</a> as follows:</p>
+
+<div class="language-http highlighter-rouge">
+<pre class="highlight"><code><span class="err">GET /MedicationOrder?patient=[id]]&amp;_list=$current-medications
+</span></code></pre>
+</div>
+
+<h3 id="revinclude">__revinclude</h3>
+
+<p>The example searches will only return MedicationOrder resources, it will not return any referenced resources such drugs (Medications) or clinicians (Practitioner). To return referenced resources add the parameter ‘_revinclude=*’, specific resources can be selected (see https://www.hl7.org/fhir for details)</p>
+
+<div class="language-http highlighter-rouge">
+<pre class="highlight"><code><span class="err">GET /MedicationOrder?patient.identifier=http://fhir.nhs.net/Id/nhs-number|9876543210&amp;datewritten=gt2017-03-14&amp;_revinclude=*
+</span></code></pre>
+</div>
+
+<h3 id="search-response">Search Response</h3>
+
+<p>The search parameters are based around a logical model which is shown below:</p>
+
+<figure><img class="docimage" src="images/Bristol/Bristol.EntityRelationship.Resource.bmp" alt="Bristol ERD" style="max-width: 200pxpx"><figcaption>MedicationOrder Logical Model</figcaption></figure>
+
+<p>A search on MedicationOrder without the ‘_Revinclude=<em>’ would return a FHIR <a href="https://www.hl7.org/fhir/DSTU2/bundle.html">Bundle</a> would return only MedicationOrder resources. This is useful if you already have Patient, Medication and Practitioner data but in most case the calling system or web application won’t be. In this case it is useful for all the referenced resources to be returned with the search results.
+This is done using the ‘_Revinclude=</em>’ parameter and the returned search results now include the referenced parameters. The convention is to list the referenced resources before they are referenced (so they can be processed first).</p>
+
+<figure><img class="docimage" src="images/Bristol/Bristol.searchResults.includeReferenced.bmp" alt="Bristol ERD" style="max-width: 200pxpx"><figcaption>MedicationOrder Search Results</figcaption></figure>
+
+<p>Provider systems:</p>
+
+<ul>
+  <li>SHALL return a <code class="highlighter-rouge">200</code> <strong>OK</strong> HTTP status code on successful execution of the operation.</li>
+</ul>
+
+<div class="language-json highlighter-rouge">
+<pre class="highlight"><code><span class="err">TODO</span><span class="w">
+</span></code></pre>
+</div>
+
+<h4 id="error-handling">Error Handling</h4>
+
+<p>The Provider system SHALL return an error if:</p>
+
+<ul>
+  <li>the <code class="highlighter-rouge">id</code> is invalid (i.e. no <code class="highlighter-rouge">Patient</code> resource with that logical id exists on the server).</li>
+</ul>
+
+<p>Provider systems SHALL return an <a href="http://www.hl7.org/fhir/operationoutcome.html">OperationOutcome</a> resource that provides additional detail when one or more data fields are corrupt or a specific business rule/constraint is breached.</p>
+
+<p>Refer to <a href="development_fhir_error_handling_guidance.html">Development - FHIR Guidance - Error Handling</a> for details of error codes.</p>
+
+<h2 id="examples">Examples</h2>
+
+<h3 id="c">C#</h3>
+
+<div class="alert alert-success" role="alert">
+<i class="fa fa-check-square-o"></i> <b>Tip:</b> C# code snippets utilise Ewout Kramer’s <a href="https://github.com/ewoutkramer/fhir-net-api">fhir-net-api</a> library which is the official .NET API for HL7® FHIR®.</div>
+
+<h4 id="example-1-retrieve-all-medication-orders-for-a-patient">Example 1. Retrieve all medication orders for a patient</h4>
+
+<div class="language-csharp highlighter-rouge">
+<pre class="highlight"><code><span class="kt">var</span> <span class="n">client</span> <span class="p">=</span> <span class="k">new</span> <span class="nf">FhirClient</span><span class="p">(</span><span class="s">"https://fhirtest.uhn.ca/baseDstu2"</span><span class="p">);</span>
+<span class="n">client</span><span class="p">.</span><span class="n">PreferredFormat</span> <span class="p">=</span> <span class="n">ResourceFormat</span><span class="p">.</span><span class="n">Json</span><span class="p">;</span>
+<span class="kt">var</span> <span class="n">query</span> <span class="p">=</span> <span class="k">new</span> <span class="kt">string</span><span class="p">[]</span> <span class="p">{</span> <span class="s">"patient=42"</span> <span class="p">};</span>
+<span class="kt">var</span> <span class="n">bundle</span> <span class="p">=</span> <span class="n">client</span><span class="p">.</span><span class="n">Search</span><span class="p">&lt;</span><span class="n">MedicationOrder</span><span class="p">&gt;(</span><span class="n">query</span><span class="p">);</span>
+<span class="n">bundle</span><span class="p">.</span><span class="n">Entry</span><span class="p">.</span><span class="nf">Count</span><span class="p">().</span><span class="nf">Dump</span><span class="p">();</span>
+<span class="n">FhirSerializer</span><span class="p">.</span><span class="nf">SerializeResourceToJson</span><span class="p">(</span><span class="n">bundle</span><span class="p">).</span><span class="nf">Dump</span><span class="p">();</span>
+</code></pre>
+</div>
+
+<h3 id="java">Java</h3>
+
+<div class="alert alert-success" role="alert">
+<i class="fa fa-check-square-o"></i> <b>Tip:</b> Java code snippets utilise James Agnew’s <a href="https://github.com/jamesagnew/hapi-fhir/">hapi-fhir</a> library.</div>
+
+<div class="language-java highlighter-rouge">
+<pre class="highlight"><code><span class="n">TODO</span>
+</code></pre>
+</div>
+
+<h3 id="curl">Curl</h3>
+
+<pre><code class="language-curl">TODO
+</code></pre>
+
+
+
+    <div class="tags">
+        
+        <b>Tags: </b>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </div>
+
+    
+
+</div>
+
+<hr class="shaded">
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+                    <img class="pull-left" src="images/explanatoryline.png" alt="NHS Digital Explanatory Line">
+                    <br>
+                    ©2017 INTEROpen and NHS Digital<br>
+                     Site last generated: May 18, 2017 <br>
+                    a75022b278eb7154898bf9b31ae39c88c3f6e964<br>
+                    <br>
+                    <!-- OGL Licence -->
+                    <div class="open-government-licence">
+                        <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" rel="license" class="no_icon"><img src="images/licence/ogl-symbol-41px-retina-black.png"></a>
+                        <p>All content is available under the <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" rel="license" class="no_icon">Open Government Licence v3.0</a>, except where otherwise stated</p>
+                    </div>
+                </div>
+            </div>
+</footer>
+
+
+    </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+    </div>
+
+</body>
+
+</html>
